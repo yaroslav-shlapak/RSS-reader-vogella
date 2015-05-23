@@ -6,8 +6,17 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="match_parent"
         android:layout_marginTop="?android:attr/actionBarSize"
         class="com.example.android.rssreader.MyListFragment" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        class="com.example.android.rssreader.DetailFragment" />
+
 </LinearLayout> 
