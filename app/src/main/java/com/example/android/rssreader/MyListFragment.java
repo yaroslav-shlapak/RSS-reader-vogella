@@ -3,6 +3,7 @@ package com.example.android.rssreader;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ public class MyListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d("test", "before inflating");
         View view = inflater.inflate(R.layout.fragment_rsslist_overview,
                 container, false);
         Button button = (Button) view.findViewById(R.id.button1);
@@ -24,6 +26,7 @@ public class MyListFragment extends Fragment {
                 updateDetail();
             }
         });
+        Log.d("test", "MyListFragment onCreateView");
         return view;
     }
 
@@ -34,6 +37,7 @@ public class MyListFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+        Log.d("test", "onAttach");
         if (activity instanceof OnItemSelectedListener) {
             listener = (OnItemSelectedListener) activity;
         } else {

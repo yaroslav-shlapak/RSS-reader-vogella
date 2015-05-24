@@ -4,19 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <fragment
-        android:id="@+id/listFragment"
-        android:layout_width="0dp"
+    <FrameLayout
+        android:id="@+id/listcontainer_land"
         android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?android:attr/actionBarSize"
-        class="com.example.android.rssreader.MyListFragment" />
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
 
-    <fragment
-        android:id="@+id/detailFragment"
-        android:layout_width="0dp"
+    <FrameLayout
+        android:id="@+id/detailscontainer_land"
         android:layout_weight="2"
-        android:layout_height="match_parent"
-        class="com.example.android.rssreader.DetailFragment" />
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
 
 </LinearLayout> 
